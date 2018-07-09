@@ -21,6 +21,10 @@
 * Insert spaces for tabs: ON
 * Show whitespace characters: ON
 
+## Java > Code Style > Organize imports
+
+* (remove all elements)
+
 ## General > Java > Editor > Save Actions
 
 * Perform the selected actions on save: ON

@@ -15,4 +15,6 @@
 /instance/org.eclipse.jdt.ui/sp_cleanup.on_save_use_additional_actions=true
 /instance/org.eclipse.jdt.ui/sp_cleanup.remove_redundant_type_arguments=true
 /instance/org.eclipse.jdt.ui/sp_cleanup.remove_trailing_whitespaces=true
+# organize imports
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.importorder=
 file_export_version=3.0
