@@ -20,3 +20,9 @@
 
 * Insert spaces for tabs: ON
 * Show whitespace characters: ON
+
+# Java > Code Style > Formatter
+
+## Indentation
+
+* Tab policy: Spaces only
