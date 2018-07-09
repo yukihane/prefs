@@ -21,6 +21,30 @@
 * Insert spaces for tabs: ON
 * Show whitespace characters: ON
 
+## General > Java > Editor > Save Actions
+
+* Perform the selected actions on save: ON
+  * Format source code: ON
+    * Format edited lines
+  * Organize imports: OFF
+  * Additional actions: ON
+
+### Code Organizeing
+
+* Remove trailing whitespace: ON
+  * All lines
+
+### Code Style
+
+* Use modifier 'final' where possible: ON
+  * Private fields: ON
+  * Parameter: ON
+  * Local variables: ON
+
+# Unnecessary Code
+
+* Remove redundant type arguments: ON
+
 # Java > Code Style > Formatter
 
 ## Indentation
