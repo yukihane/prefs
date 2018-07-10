@@ -45,7 +45,7 @@
   * Parameter: ON
   * Local variables: ON
 
-# Unnecessary Code
+### Unnecessary Code
 
 * Remove redundant type arguments: ON
 
