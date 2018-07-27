@@ -64,3 +64,7 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+" https://blog.odoruinu.net/2014/01/29/how-to-turn-off-paste-mode-when-becoming-normal-mode-on-vim/
+" Turn off paste mode when leaving insert
+autocmd InsertLeave * set nopaste
