@@ -59,7 +59,7 @@ nnoremap k gk
 " 不可視文字を可視化(タブが「▸-」と表示される)
 " set list listchars=tab:\▸\-
 set list
-set listchars=tab:»-,trail:-,extends:»,precedes:«
+set listchars=tab:^\-,trail:-,extends:^,precedes:<
 " Tab文字を半角スペースにする
 set expandtab
 " 行頭以外のTab文字の表示幅（スペースいくつ分）
