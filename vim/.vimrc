@@ -85,3 +85,11 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " https://blog.odoruinu.net/2014/01/29/how-to-turn-off-paste-mode-when-becoming-normal-mode-on-vim/
 " Turn off paste mode when leaving insert
 autocmd InsertLeave * set nopaste
+
+" https://github.com/rust-lang/rust.vim
+let g:rustfmt_autosave = 1
+let g:rust_clip_command = 'xclip -selection clipboard'
+" https://github.com/racer-rust/vim-racer
+set hidden
+let g:racer_experimental_completer = 1
+
