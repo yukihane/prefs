@@ -1,0 +1,1 @@
+WildFly/Thorntail の httpセッションを Infinispan で外部化しようとした際の準備環境
