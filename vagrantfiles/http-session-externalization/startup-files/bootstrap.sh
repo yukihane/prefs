@@ -14,7 +14,7 @@ rm RPM-GPG-KEY-WANdisco
 
 
 yum update -y
-yum install -y vim git unzip tree
+yum install -y vim git unzip tree java-1.8.0-openjdk-devel
 
 # https://docs.docker.com/install/linux/docker-ce/centos/
 yum install -y yum-utils device-mapper-persistent-data lvm2
