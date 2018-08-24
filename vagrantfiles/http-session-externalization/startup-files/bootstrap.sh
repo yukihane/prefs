@@ -23,6 +23,7 @@ yum install -y docker-ce
 
 
 downloaddir=/home/vagrant/downloads
+mkdir -p $downloaddir
 cd $downloaddir
 
 curl -L -O http://download.jboss.org/wildfly/13.0.0.Final/wildfly-13.0.0.Final.tar.gz
