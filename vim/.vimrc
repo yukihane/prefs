@@ -18,7 +18,8 @@ let g:rustfmt_autosave = 1
 " https://qiita.com/morikooooo/items/9fd41bcd8d1ce9170301
 " setting
 "文字コードをUFT-8に設定
-set fenc=utf-8
+set encoding=utf-8
+set fileencodings=utf-8,cp932
 " バックアップファイルを作らない
 " set nobackup
 " スワップファイルを作らない
