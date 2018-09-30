@@ -17,28 +17,9 @@ maven-checkstyle-plugin configuration validate
   <metadata name="org.checkstyle.principle" value="Practice What You Preach"/>
   <module name="TreeWalker">
     <property name="tabWidth" value="4"/>
-    <module name="AnnotationLocation">
-      <property name="tokens" value="ANNOTATION_FIELD_DEF"/>
-      <property name="allowSamelineSingleParameterlessAnnotation" value="false"/>
-    </module>
-    <module name="AnnotationLocation">
-      <property name="tokens" value="PARAMETER_DEF"/>
-      <property name="allowSamelineMultipleAnnotations" value="true"/>
-    </module>
-    <module name="AnnotationOnSameLine">
-      <property name="severity" value="ignore"/>
-      <property name="tokens" value="ANNOTATION_FIELD_DEF"/>
-      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
-    </module>
-    <module name="AnnotationUseStyle"/>
     <module name="MissingDeprecated"/>
     <module name="MissingOverride">
       <property name="javaFiveCompatibility" value="true"/>
-    </module>
-    <module name="PackageAnnotation"/>
-    <module name="SuppressWarnings">
-      <property name="format" value="^((?!unchecked|deprecation|rawtypes|resource).)*$"/>
-      <message key="suppressed.warning.not.allowed" value="The warning ''{0}'' cannot be suppressed at this location.              Only few javac warnings are allowed to suppress.              If try to suppress checkstyle/pmd/..... violation please do this in their config file.              If you try to suppress IntelliJ IDEA inspection,              please use javadoc block tag @noinspection"/>
     </module>
     <module name="SuppressWarningsHolder"/>
     <module name="AvoidNestedBlocks">
