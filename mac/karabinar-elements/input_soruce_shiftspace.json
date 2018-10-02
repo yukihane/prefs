@@ -1,0 +1,68 @@
+{
+  "title": "input_source_if,input_source_unless example",
+  "rules": [
+    {
+      "description": "Toggle input sources (English or Japanese) by Shift + Space",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "language": "ja"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "language": "ja"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_kana"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+# これは何？
+
+MacでWIN用US配列キーボードを利用するにあたって行った設定の手順を記録したものです。
+おそらくほぼ https://github.com/tekezo/Karabiner-Elements/releases[Karabinar-Elements] の設定になるはずです。
+
+# Karabinar-Elements 設定
+
+## Simple Modifications
+
+### CtrlとWINキー入れ替え
+
+[options="header"]
+|====
+|From key|To key
+|left_command|left_control
+|left_control|left_command
+|====
+
+## Complex Modifications
+
+### Shift + Spaceで日本語/英語入力切り替え
+
+link:./input_soruce_shiftspace.json[]
+
+### TerminalでCtrlとWIN入れ替え
+
+link:./swap_on_terminal.json[]
+
+
+# その他設定
+
+* バックスラッシュキーで半角￥入力を行わないようにする
+** キーボード > 入力ソース から
+* マウス縦スクロールを逆にする
+** https://pilotmoon.com/scrollreverser/[Scroll Reverser]
