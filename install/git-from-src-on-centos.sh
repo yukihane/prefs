@@ -4,7 +4,7 @@ git_ver=git-2.20.1
 # Dockerイメージにはsudoが無い、かつrootでセットアップしている前提なので
 sudo=$(command -v sudo)
 
-${sudo} yum -y install gcc autoconf zlib-devel curl-devel expat-devel gettext-devel openssl-devel perl-devel
+${sudo} yum -y install gcc autoconf make zlib-devel curl-devel expat-devel gettext-devel openssl-devel perl-devel
 
 pushd /tmp
 curl -L -o git-src.tar.xz https://mirrors.edge.kernel.org/pub/software/scm/git/${git_ver}.tar.xz
