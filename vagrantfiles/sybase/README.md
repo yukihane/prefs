@@ -46,7 +46,7 @@ Sybaseのインストール条件を設定するファイルです。
 
 ## [環境変数設定](https://help.sap.com/viewer/244b731a316a4de0ad1dd618937b0f8e/16.0.0.0/en-US/a6ebdcc0bc2b1014a0f0fad105f10ae9.html)
 
-bashの場合は次のコマンドです。 (行儀が悪いですが)`/etc/bashrc`に追記しておきましょう。
+`/etc/profile` に追記するようにしています。
 
     source /opt/sap/SYBASE.sh
 
@@ -58,9 +58,6 @@ bashの場合は次のコマンドです。 (行儀が悪いですが)`/etc/bash
 
     isql -Usa -PSybase123 -SSYBASE
 
-ちなみに`vagrant`ではデフォルトでホスト(ssh接続元)のLANG設定がゲスト(ssh接続先)へ連携されるようですが、これが原因でSybaseが日本語リソース持ってない旨のエラーを吐きました。`/etc/bashrc`に
-
-    export LANG=C
 
 と書いておくことで対処します。
 
