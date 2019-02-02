@@ -1,0 +1,7 @@
+
+SYBASE
+	master tcp ether localhost 5000
+	master tcp ether 127.0.0.1 5000
+	master tcp ether 10.0.2.15 5000
+	query tcp ether localhost 5000
+

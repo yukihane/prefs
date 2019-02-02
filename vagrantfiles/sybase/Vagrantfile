@@ -75,5 +75,7 @@ Vagrant.configure("2") do |config|
     tar xf /vagrant/ASE_Suite.linuxamd64.tgz
     /var/tmp/sybase/setup.bin -f /vagrant/response.txt -i silent -DAGREE_TO_SAP_LICENSE=true -DRUN_SILENT=true
     cat 'source /opt/sap/SYBASE.sh' >> /etc/profile
+    mv /opt/sap/interfaces /opt/sap/interfaces.original
+    cp /vagrant/interfaces /opt/sap/interfaces
   SHELL
 end
