@@ -87,7 +87,7 @@ DO_UPDATE_INSTALL=false
 #
 # CHOSEN_FEATURE_LIST=fase_srv,fopen_client,fdblib,fjconnect160,fdbisql,fqptune,fsysam_util,fase_cagent,fodbcl,fconn_python,fconn_perl,fconn_php,fscc_server,fasecmap
 CHOSEN_INSTALL_SET=Custom
-CHOSEN_FEATURE_LIST=fase_srv,fjconnect160,fdbisql
+CHOSEN_FEATURE_LIST=fase_srv,fase_add_lm,fjconnect160,fdbisql
 
 #Choose Product License Type
 #---------------------------
