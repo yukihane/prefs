@@ -59,8 +59,6 @@ Sybaseのインストール条件を設定するファイルです。
     isql -Usa -PSybase123 -SSYBASE
 
 
-と書いておくことで対処します。
-
 (Transact-)SQL実行:
 
     selet @@version
@@ -79,6 +77,18 @@ Sybaseのインストール条件を設定するファイルです。
     > shutdown
     > go
 
+## Hostから接続する
+
+[デフォルトの`interfaces`ファイル](./interfaces)で
+
+    master tcp ether 10.0.2.1 5000
+
+としていますが、 `10.0.2.1` をguestに割り当てられたIPアドレスに書き換えた後、Sybaseを再起動します(前述の終了処理と起動処理を実行します)。
+
+guestのIPアドレスは、guestにログインしている状態で `ip addr`コマンドで確認できます。
+
+(VirtualBox設定で、IPアドレス割り当てを固定化することができたと思いますので、それを設定するとより良いかもしれません。)
+
 ## その他
 
-DDLは[このへん](https://help.sap.com/viewer/4c45f8d627434bb19e10dd0abbb757b0/16.0.0.0/en-US/ab04bcd2bc2b101497868a1a54944a99.html)にマニュアルが有る。
+DDLは[このへん](https://help.sap.com/viewer/4c45f8d627434bb19e10dd0abbb757b0/16.0.0.0/en-US/ab04bcd2bc2b101497868a1a54944a99.html)にマニュアルが。
