@@ -92,3 +92,13 @@ guestのIPアドレスは、guestにログインしている状態で `ip addr`�
 ## その他
 
 DDLは[このへん](https://help.sap.com/viewer/4c45f8d627434bb19e10dd0abbb757b0/16.0.0.0/en-US/ab04bcd2bc2b101497868a1a54944a99.html)にマニュアルが。
+
+### デフォルトcharsetをsjisにする
+
+マニュアルではUTF8に変換する例があるので、 `utf8` を `sjis` に読みかえれば良い。
+
+* [Example: Converting a Unicode Database to UTF-8](http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.help.ase.16.0.ja/title.htm)
+
+また、関連する情報は `master..syscharsets` に保存されているようだ。
+
+* [Error 5824: Cannot reconfigure server to use sort order ID %d, because the row for its underlying character set (ID %d) does not exist in syscharsets.](http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc00729.1500/html/errMessageAdvRes/BGBBDCDB.htm)
