@@ -99,6 +99,26 @@ DDLは[このへん](https://help.sap.com/viewer/4c45f8d627434bb19e10dd0abbb757b
 
 * [Example: Converting a Unicode Database to UTF-8](http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc31654.1600/doc/html/san1360629218880.html)
 
+テーブルが空の状態であれば `bcp` は必要ないので次のような手順になる。
+設定変更してshutdown。
+
+    charset -Usa -P binary.srt sjis
+    isql -Usa -P
+    sp_configure 'default sortorder id', 50, 'sjis'
+    go
+    shutdown
+    go
+
+起動させる
+
+    sudo -i $SYBASE/$SYBASE_ASE/install/RUN_SYBASE
+
+と設定が有効化され終了するので、再度起動。
+
+    sudo -i $SYBASE/$SYBASE_ASE/install/RUN_SYBASE &
+
+以上。
+
 また、関連する情報は `master..syscharsets` に保存されているようだ。
 
 * [Error 5824: Cannot reconfigure server to use sort order ID %d, because the row for its underlying character set (ID %d) does not exist in syscharsets.](http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc00729.1500/html/errMessageAdvRes/BGBBDCDB.htm)
