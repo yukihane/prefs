@@ -97,7 +97,7 @@ DDLは[このへん](https://help.sap.com/viewer/4c45f8d627434bb19e10dd0abbb757b
 
 マニュアルではUTF8に変換する例があるので、 `utf8` を `sjis` に読みかえれば良い。
 
-* [Example: Converting a Unicode Database to UTF-8](http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.help.ase.16.0.ja/title.htm)
+* [Example: Converting a Unicode Database to UTF-8](http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc31654.1600/doc/html/san1360629218880.html)
 
 また、関連する情報は `master..syscharsets` に保存されているようだ。
 
