@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <profiles version="13">
-<profile kind="CodeFormatterProfile" name="costom" version="13">
+<profile kind="CodeFormatterProfile" name="custom" version="13">
+<!-- @param <param> <description> のフォームにおいて、descriptionの前で改行しない -->
+<setting id="org.eclipse.jdt.core.formatter.comment.insert_new_line_for_parameter" value="do not insert"/>
+<!-- 1行コメントは整形しない -->
+<setting id="org.eclipse.jdt.core.formatter.comment.format_line_comments" value="false"/>
+<!-- もともと改行されている箇所は保持する(行をつなげるような整形は行わない) -->
+<setting id="org.eclipse.jdt.core.formatter.join_wrapped_lines" value="false"/>
+<!-- switch-caseのcaseをインデントする(NetBeansデフォルト仕様に合わせる) -->
+<setting id="org.eclipse.jdt.core.formatter.indent_switchstatements_compare_to_switch" value="true"/>
+<!-- ブロックコメントを整形しない -->
+<setting id="org.eclipse.jdt.core.formatter.comment.format_block_comments" value="false"/>
+<!-- コメント中の改行を保持する(行をつなげるような整形は行わない) -->
+<setting id="org.eclipse.jdt.core.formatter.join_lines_in_comments" value="false"/>
+<!-- インデントはspaceで行う -->
 <setting id="org.eclipse.jdt.core.formatter.tabulation.char" value="space"/>
+<!-- 前行から続きの行のインデントサイズ -->
+<setting id="org.eclipse.jdt.core.formatter.continuation_indentation" value="1"/>
+<!-- 配列初期化の項目列挙中で改行した場合のインデントサイズ -->
+<setting id="org.eclipse.jdt.core.formatter.continuation_indentation_for_array_initializer" value="1"/>
+<!-- annotationのelement-value pairsについて "Wrap allelements, except first element if not necessary" -->
+<setting id="org.eclipse.jdt.core.formatter.alignment_for_arguments_in_annotation" value="80"/>
+
+<!-- 以下, 暗黙設定値がEclipseデフォルト設定と異なっている設定の明示 -->
+<!-- Align Javadoc tags in columns: Don't align -->
+<setting id="org.eclipse.jdt.core.formatter.comment.indent_root_tags" value="false"/>
+<!-- White Space - Arrays - Array initializers - Before closing brace -->
+<setting id="org.eclipse.jdt.core.formatter.insert_space_before_closing_brace_in_array_initializer" value="insert"/>
+<setting id="org.eclipse.jdt.core.formatter.insert_space_after_opening_brace_in_array_initializer" value="insert"/>
+<!-- workaround: https://github.com/revelc/formatter-maven-plugin/issues/289#issuecomment-475023352 -->
+<!-- おそらく他にも alignment_for_ 系で差異がある -->
+<setting id="org.eclipse.jdt.core.formatter.alignment_for_enum_constants" value="16"/>
+<setting id="org.eclipse.jdt.core.formatter.alignment_for_superinterfaces_in_type_declaration" value="16"/>
 </profile>
 </profiles>
