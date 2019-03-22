@@ -1,6 +1,6 @@
 #!/bin/bash -eux
 
-git_ver=git-2.20.1
+git_ver=git-2.21.0
 # Dockerイメージにはsudoが無い、かつrootでセットアップしている前提なので
 sudo=$(command -v sudo)
 
