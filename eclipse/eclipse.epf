@@ -45,6 +45,8 @@
 /instance/org.eclipse.jdt.ui/sp_cleanup.qualify_static_method_accesses_with_declaring_class=false
 /instance/org.eclipse.jdt.ui/sp_cleanup.remove_private_constructors=false
 /instance/org.eclipse.jdt.ui/sp_cleanup.remove_redundant_type_arguments=true
+/instance/org.eclipse.jdt.ui/sp_cleanup.remove_redundant_modifiers=true
+/instance/org.eclipse.jdt.ui/sp_cleanup.remove_redundant_semicolons=true
 /instance/org.eclipse.jdt.ui/sp_cleanup.remove_trailing_whitespaces=true
 /instance/org.eclipse.jdt.ui/sp_cleanup.remove_trailing_whitespaces_all=true
 /instance/org.eclipse.jdt.ui/sp_cleanup.remove_trailing_whitespaces_ignore_empty=false
