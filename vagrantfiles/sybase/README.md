@@ -102,8 +102,8 @@ DDLは[このへん](https://help.sap.com/viewer/4c45f8d627434bb19e10dd0abbb757b
 テーブルが空の状態であれば `bcp` は必要ないので次のような手順になる。
 設定変更してshutdown。
 
-    charset -Usa -P binary.srt sjis
-    isql -Usa -P
+    charset -SSYBASE -Usa -PSybase123 binary.srt sjis
+    isql -SSYBASE -Usa -PSybase123
     sp_configure 'default sortorder id', 50, 'sjis'
     go
     shutdown
