@@ -3,7 +3,7 @@
 
 set -eux
 
-tmux_ver=2.8
+tmux_ver=2.9a
 # Dockerイメージにはsudoが無い、かつrootでセットアップしている前提なので
 sudo=$(command -v sudo)
 
