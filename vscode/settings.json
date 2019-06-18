@@ -1,0 +1,4 @@
+{
+    "editor.minimap.enabled": false,
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}"
+}
