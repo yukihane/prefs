@@ -7,8 +7,8 @@ endif
 
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
-Plug 'rust-lang/rust.vim'
-Plug 'racer-rust/vim-racer'
+"Plug 'rust-lang/rust.vim'
+"Plug 'racer-rust/vim-racer'
 call plug#end()
 
 " https://github.com/rust-lang/rust.vim
