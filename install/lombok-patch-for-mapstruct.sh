@@ -5,7 +5,7 @@
 
 set -eux
 
-lombok_ver=1.18.8
+lombok_ver=1.18.12
 
 lombok_url=https://repo1.maven.org/maven2/org/projectlombok/lombok/${lombok_ver}/lombok-${lombok_ver}.jar
 filename=original-${lombok_ver}.jar
