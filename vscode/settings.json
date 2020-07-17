@@ -1,4 +1,7 @@
 {
-    "editor.minimap.enabled": false,
-    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}"
+  // https://code.visualstudio.com/docs/getstarted/settings
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "editor.minimap.enabled": false,
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}"
 }
