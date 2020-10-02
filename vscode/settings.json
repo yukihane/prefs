@@ -3,5 +3,7 @@
   "files.encoding": "utf8",
   "files.eol": "\n",
   "editor.minimap.enabled": false,
-  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}"
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  // https://github.com/mrmckeb/typescript-plugin-css-modules#alternative-usage
+  "typescript.tsserver.pluginPaths": ["typescript-plugin-css-modules"]
 }
