@@ -2,6 +2,9 @@
 /instance/org.eclipse.core.resources/encoding=UTF-8
 /instance/org.eclipse.core.runtime/content-types/org.eclipse.jdt.core.javaProperties/charset=UTF-8
 /instance/org.eclipse.core.runtime/line.separator=\n
+# @SuppressWarnings("PMD.UnusedLocalVariable") 等と書いたときに出る警告を抑止
+# https://stackoverflow.com/a/5040381/4506703
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.unhandledWarningToken=ignore
 /instance/org.eclipse.ui.editors/showWhitespaceCharacters=true
 /instance/org.eclipse.ui.editors/spacesForTabs=true
 /instance/org.eclipse.wst.xml.core/formatCommentText=false
