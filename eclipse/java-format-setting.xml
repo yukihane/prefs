@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<profiles version="13">
-<profile kind="CodeFormatterProfile" name="custom" version="13">
+<profiles version="21">
+<profile kind="CodeFormatterProfile" name="custom" version="21">
 <!-- @param <param> <description> のフォームにおいて、descriptionの前で改行しない -->
 <setting id="org.eclipse.jdt.core.formatter.comment.insert_new_line_for_parameter" value="do not insert"/>
 <!-- 1行コメントは整形しない -->
@@ -23,6 +23,15 @@
 <setting id="org.eclipse.jdt.core.formatter.alignment_for_arguments_in_annotation" value="80"/>
 
 <!-- 以下, 暗黙設定値がEclipseデフォルト設定と異なっている設定の明示 -->
+
+<!-- 4.18 で導入されたアノテーションの改行設定。昔の挙動相当に設定する -->
+<!-- https://www.eclipse.org/eclipse/news/4.18/jdt.php#formatter-wrap-annotations -->
+<setting id="org.eclipse.jdt.core.formatter.alignment_for_annotations_on_enum_constant" value="48"/>
+<setting id="org.eclipse.jdt.core.formatter.alignment_for_annotations_on_package" value="48"/>
+<setting id="org.eclipse.jdt.core.formatter.alignment_for_annotations_on_type" value="48"/>
+<setting id="org.eclipse.jdt.core.formatter.alignment_for_annotations_on_local_variable" value="48"/>
+<setting id="org.eclipse.jdt.core.formatter.alignment_for_annotations_on_field" value="48"/>
+<setting id="org.eclipse.jdt.core.formatter.alignment_for_annotations_on_method" value="48"/>
 <!-- Align Javadoc tags in columns: Don't align -->
 <setting id="org.eclipse.jdt.core.formatter.comment.indent_root_tags" value="false"/>
 <!-- White Space - Arrays - Array initializers - Before closing brace -->
