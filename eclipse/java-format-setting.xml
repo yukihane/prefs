@@ -34,6 +34,7 @@
 <setting id="org.eclipse.jdt.core.formatter.alignment_for_annotations_on_method" value="48"/>
 <!-- Align Javadoc tags in columns: Don't align -->
 <setting id="org.eclipse.jdt.core.formatter.comment.indent_root_tags" value="false"/>
+<setting id="org.eclipse.jdt.core.formatter.comment.align_tags_descriptions_grouped" value="false"/>
 <!-- White Space - Arrays - Array initializers - Before closing brace -->
 <setting id="org.eclipse.jdt.core.formatter.insert_space_before_closing_brace_in_array_initializer" value="insert"/>
 <setting id="org.eclipse.jdt.core.formatter.insert_space_after_opening_brace_in_array_initializer" value="insert"/>
