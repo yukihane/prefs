@@ -1,4 +1,5 @@
 {
+  "telemetry.enableTelemetry": false,
   // https://code.visualstudio.com/api/references/theme-color
   "workbench.colorCustomizations": {
     "editorWarning.foreground": "#00588f"
