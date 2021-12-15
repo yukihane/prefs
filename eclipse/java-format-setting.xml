@@ -13,6 +13,8 @@
 <setting id="org.eclipse.jdt.core.formatter.comment.format_block_comments" value="false"/>
 <!-- コメント中の改行を保持する(行をつなげるような整形は行わない) -->
 <setting id="org.eclipse.jdt.core.formatter.join_lines_in_comments" value="false"/>
+<!-- ファイル末尾は改行する -->
+<setting id="org.eclipse.jdt.core.formatter.insert_new_line_at_end_of_file_if_missing" value="insert"/>
 <!-- インデントはspaceで行う -->
 <setting id="org.eclipse.jdt.core.formatter.tabulation.char" value="space"/>
 <!-- 前行から続きの行のインデントサイズ -->
