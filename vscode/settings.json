@@ -8,6 +8,9 @@
   "files.eol": "\n",
   "editor.minimap.enabled": false,
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  // https://github.com/CoenraadS/BracketPair
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs":"active",
   // https://github.com/mrmckeb/typescript-plugin-css-modules#alternative-usage
   "typescript.tsserver.pluginPaths": ["typescript-plugin-css-modules"]
 }
