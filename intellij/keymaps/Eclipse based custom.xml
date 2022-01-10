@@ -1,0 +1,8 @@
+<keymap version="1" name="Eclipse based custom" parent="Eclipse">
+  <action id="CloseActiveTab">
+    <keyboard-shortcut first-keystroke="ctrl f4" />
+  </action>
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="ctrl w" />
+  </action>
+</keymap>
