@@ -1,5 +1,6 @@
 {
   "telemetry.enableTelemetry": false,
+  "editor.tabSize": 2,
   // https://code.visualstudio.com/api/references/theme-color
   "workbench.colorCustomizations": {
     "editorWarning.foreground": "#00588f"
