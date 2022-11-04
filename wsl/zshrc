@@ -1,0 +1,48 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+
+# install prezto
+# https://github.com/sorin-ionescu/prezto
+
+# デフォルトだとgitのエディタがnano
+# https://yukihane.github.io/blog/201807/27/set-git-commit-editor/
+export VISUAL=/usr/bin/vim
+export EDITOR=/usr/bin/vim
+# デフォルトで rm -i になっている
+unalias rm
+# git で ^ が使えない対策
+unsetopt extended_glob
+# linux で mac の pbcopy みたいなものを実現
+# alias pbcopy='xsel --clipboard --input'
+# 上はXが無いと動かないのでWSLでは代わりに
+# https://devlights.hatenablog.com/entry/2021/05/28/100517
+alias pbcopy='clip.exe'
+
+# http://asdf-vm.com/guide/getting-started.html#_3-install-asdf
+. $HOME/.asdf/asdf.sh
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
+
+# X の設定
+# https://ja.stackoverflow.com/a/83575/2808
+export DISPLAY=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
+
+# https://youtrack.jetbrains.com/issue/IDEA-276737/Cannot-import-Maven-project-on-WSL-in-202121
+export M2_HOME=/home/yuki/.sdkman/candidates/maven/current
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
