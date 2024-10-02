@@ -94,3 +94,5 @@ let g:rust_clip_command = 'xclip -selection clipboard'
 set hidden
 let g:racer_experimental_completer = 1
 
+" https://stackoverflow.com/a/55979801
+set mouse=
