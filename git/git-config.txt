@@ -7,6 +7,7 @@ git config --global pull.ff only
 git config --global gui.encoding utf-8
 # git config --global credential.helper manager-core
 git config --global branch.sort authordate
+git config --global alias.br "branch --format='%(authordate:short) %(authorname) %(refname:short)'"
 git config --global submodule.recurse true
 git config --global alias.logshort 'log --pretty=format:"%h %an %ai %s"'
 git config --global alias.diffw 'diff --word-diff-regex=.'
