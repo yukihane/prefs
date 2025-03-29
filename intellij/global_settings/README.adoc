@@ -1,6 +1,0 @@
-[source]
-----
-zip -r settings.zip *
-----
-
-IntelliJ のアクション "Import Sttings..." でインポートできます。
