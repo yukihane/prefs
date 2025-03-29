@@ -1,0 +1,37 @@
+<keymap version="1" name="Windows-based" parent="$default">
+  <action id="Back">
+    <keyboard-shortcut first-keystroke="ctrl alt left" />
+    <mouse-shortcut keystroke="button4" />
+    <keyboard-shortcut first-keystroke="ctrl open_bracket" />
+  </action>
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="ctrl w" />
+  </action>
+  <action id="EditorCodeBlockEnd" />
+  <action id="EditorCodeBlockStart" />
+  <action id="EditorSelectWord" />
+  <action id="ExternalSystem.ProjectRefreshAction" />
+  <action id="ForceOthersToFollowAction" />
+  <action id="Forward">
+    <keyboard-shortcut first-keystroke="ctrl alt right" />
+    <mouse-shortcut keystroke="button5" />
+    <keyboard-shortcut first-keystroke="ctrl close_bracket" />
+  </action>
+  <action id="GotoClass">
+    <keyboard-shortcut first-keystroke="shift ctrl o" />
+  </action>
+  <action id="GotoFile">
+    <keyboard-shortcut first-keystroke="ctrl o" />
+  </action>
+  <action id="GotoSymbol">
+    <keyboard-shortcut first-keystroke="ctrl t" />
+  </action>
+  <action id="MethodHierarchy.OverrideMethodAction" />
+  <action id="OverrideMethods" />
+  <action id="SmartSelect" />
+  <action id="TableResult.GrowSelection" />
+  <action id="TableResult.SelectColumn" />
+  <action id="Terminal.DeletePreviousWord" />
+  <action id="UsageFiltering.WriteAccess" />
+  <action id="Vcs.UpdateProject" />
+</keymap>
