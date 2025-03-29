@@ -17,4 +17,4 @@ IntelliJ のアクション "Import Sttings..." でimportできます。
 
 ### export 方法
 
-IntelliJ のアクション "Export Sttings..." でexportし、展開したものをコミットします。
+IntelliJ のアクション "Export Sttings..." で "**Keymaps(schemes)**" をexportし、展開したものをコミットします。
