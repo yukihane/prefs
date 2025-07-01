@@ -9,5 +9,7 @@ export EDITOR=/usr/bin/vim
 unalias rm
 # git で ^ が使えない対策
 unsetopt extended_glob
+# *(wildcard)でドットファイルも対象にする
+setopt GLOB_DOTS
 # linux で mac の pbcopy みたいなものを実現
 alias pbcopy='xsel --clipboard --input'
