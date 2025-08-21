@@ -1,58 +1,44 @@
 {
   "title": "CapsLock <=> WIN in Terminal",
-  "rules": [
+  "description": "Swap capslock and win in Terminal",
+  "manipulators": [
     {
-      "description": "Swap capslock and win in Terminal",
-      "manipulators": [
+      "type": "basic",
+      "from": {
+        "key_code": "left_control",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
         {
-          "type": "basic",
-          "from": {
-            "key_code": "left_control",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_gui"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "Terminal",
-                "^com\\.googlecode\\.iterm2"
-              ]
-            }
-          ]
-        },
+          "key_code": "left_gui"
+        }
+      ],
+      "conditions": [
         {
-          "type": "basic",
-          "from": {
-            "key_code": "left_gui",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_control"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "Terminal",
-                "^com\\.googlecode\\.iterm2"
-              ]
-            }
-          ]
+          "type": "frontmost_application_if",
+          "bundle_identifiers": ["Terminal", "^com\\.googlecode\\.iterm2"]
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "left_gui",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "left_control"
+        }
+      ],
+      "conditions": [
+        {
+          "type": "frontmost_application_if",
+          "bundle_identifiers": ["Terminal", "^com\\.googlecode\\.iterm2"]
         }
       ]
     }
