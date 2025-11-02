@@ -1,7 +1,7 @@
 ## ime_toggle.ahk
 
 Shift+Spaceで日本語・英語を切り替えるAutoHotKey設定。
-[ChatGPT](https://chatgpt.com/share/6907bcf6-4da8-8002-ad23-7283b7aaadae)に聞いて作成しました。
+ChatGPTに聞いて作成しました([会話ログリンク](https://chatgpt.com/share/6907d288-f200-8002-b6fd-8c941da20a8a))。
 
 ### 前提
 
