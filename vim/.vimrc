@@ -1,20 +1,3 @@
-" https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-" https://github.com/junegunn/vim-plug
-call plug#begin('~/.vim/plugged')
-"Plug 'rust-lang/rust.vim'
-"Plug 'racer-rust/vim-racer'
-call plug#end()
-
-" https://github.com/rust-lang/rust.vim
-let g:rustfmt_autosave = 1
-" https://github.com/racer-rust/vim-racer
-
 " https://qiita.com/morikooooo/items/9fd41bcd8d1ce9170301
 " setting
 "文字コードをUFT-8に設定
@@ -87,12 +70,6 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " Turn off paste mode when leaving insert
 autocmd InsertLeave * set nopaste
 
-" https://github.com/rust-lang/rust.vim
-let g:rustfmt_autosave = 1
-let g:rust_clip_command = 'xclip -selection clipboard'
-" https://github.com/racer-rust/vim-racer
-set hidden
-let g:racer_experimental_completer = 1
 
 " https://stackoverflow.com/a/55979801
 set mouse=
