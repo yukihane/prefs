@@ -1,10 +1,14 @@
 # install prezto
 # https://github.com/sorin-ionescu/prezto
 
+# ubuntuなら以下の設定もしておくとよいかもしれない
+# sudo update-alternatives --config editor
+# sudo update-alternatives --config vi
+#
 # デフォルトだとgitのエディタがnano
 # https://yukihane.github.io/blog/201807/27/set-git-commit-editor/
-export VISUAL=/usr/bin/vim
-export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/nvim
+export EDITOR=/usr/bin/nvim
 # デフォルトで rm -i になっている
 unalias rm
 # git で ^ が使えない対策
