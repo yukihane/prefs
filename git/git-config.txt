@@ -11,3 +11,5 @@ git config --global alias.br "branch --format='%(authordate:short) %(authorname)
 git config --global submodule.recurse true
 git config --global alias.logshort 'log --pretty=format:"%h %an %ai %s"'
 git config --global alias.diffw 'diff --word-diff-regex=.'
+git config --global alias.pushf "push --force-with-lease --force-if-includes"
+git config --global push.useForceIfIncludes true
