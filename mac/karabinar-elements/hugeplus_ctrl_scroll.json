@@ -1,29 +1,33 @@
 {
   "title": "Huge Plus: Ctrl + Trackball to Scroll",
-  "description": "Hold left_control and move trackball to scroll instead of moving cursor",
-  "manipulators": [
+  "rules": [
     {
-      "type": "basic",
-      "from": {
-        "key_code": "left_control"
-      },
-      "to": [
+      "description": "Hold left_control and move trackball to scroll instead of moving cursor",
+      "manipulators": [
         {
-          "key_code": "left_control"
-        },
-        {
-          "mouse_motion_to_scroll": {
-            "speed": 100
-          }
-        }
-      ],
-      "conditions": [
-        {
-          "type": "device_if",
-          "identifiers": [
+          "type": "basic",
+          "from": {
+            "key_code": "left_control"
+          },
+          "to": [
             {
-              "vendor_id": 1390,
-              "description": "ELECOM"
+              "key_code": "left_control"
+            },
+            {
+              "mouse_motion_to_scroll": {
+                "speed": 100
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1390,
+                  "description": "ELECOM"
+                }
+              ]
             }
           ]
         }
