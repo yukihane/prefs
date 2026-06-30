@@ -2,23 +2,15 @@
   "title": "Huge Plus: Ctrl + Trackball to Scroll",
   "rules": [
     {
-      "description": "Hold left_command (physical Ctrl) and move trackball to scroll",
+      "description": "Hold physical Ctrl (left_command after swap) and move trackball to scroll",
       "manipulators": [
         {
-          "type": "basic",
+          "type": "mouse_motion_to_scroll",
           "from": {
-            "key_code": "left_command"
-          },
-          "to": [
-            {
-              "key_code": "left_command"
-            },
-            {
-              "mouse_motion_to_scroll": {
-                "speed": 100
-              }
+            "modifiers": {
+              "mandatory": ["left_command"]
             }
-          ]
+          }
         }
       ]
     }
