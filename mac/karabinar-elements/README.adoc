@@ -25,3 +25,7 @@ link:./input_soruce_shiftspace.json[]
 ### TerminalでCtrlとWIN入れ替え
 
 link:./swap_on_terminal.json[]
+
+### Huge Plus: Ctrl押しながらトラックボールでスクロール
+
+link:./hugeplus_ctrl_scroll.json[]
