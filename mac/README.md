@@ -4,3 +4,8 @@
     - https://pilotmoon.com/scrollreverser/[Scroll Reverser]
 - Cmd + Shift + A が競合する
     - https://intellij-support.jetbrains.com/hc/en-us/articles/360005137400-Cmd-Shift-A-hotkey-opens-Terminal-with-apropos-search-instead-of-the-Find-Action-dialog
+- HUGE PLUS トラックボールのボール回転でスクロールを代替する
+    - https://github.com/emreyolcu/drag-scroll[DragScroll] を利用
+    - Shiftキーを押しながらボールを回転するとスクロールになる
+    - Karabiner-ElementsのmouseMotionToScrollはHUGE PLUSのモーションイベントを捕捉できないため使用不可
+    - `open` コマンドでは起動できないため、launchdで自動起動を設定（`~/Library/LaunchAgents/com.emreyolcu.DragScroll.plist`）
