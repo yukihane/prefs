@@ -1,41 +1,16 @@
 {
-  "title": "Huge Plus: Shift + Trackball to Scroll",
+  "title": "Huge Plus: Fn + Trackball to Scroll",
   "rules": [
     {
-      "description": "Hold left_shift and move trackball to scroll",
+      "description": "Hold fn and move trackball to scroll",
       "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_shift",
-            "modifiers": {
-              "optional": ["any"]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "enable_mouse_motion_to_scroll",
-                "value": true,
-                "key_up_value": false
-              }
-            }
-          ]
-        },
         {
           "type": "mouse_motion_to_scroll",
           "from": {
             "modifiers": {
-              "optional": ["any"]
+              "mandatory": ["fn"]
             }
-          },
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "enable_mouse_motion_to_scroll",
-              "value": true
-            }
-          ]
+          }
         }
       ]
     }
