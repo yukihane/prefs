@@ -5,7 +5,10 @@
 - Cmd + Shift + A が競合する
     - https://intellij-support.jetbrains.com/hc/en-us/articles/360005137400-Cmd-Shift-A-hotkey-opens-Terminal-with-apropos-search-instead-of-the-Find-Action-dialog
 - HUGE PLUS トラックボールのボール回転でスクロールを代替する
-    - https://github.com/emreyolcu/drag-scroll[DragScroll] を利用
-    - Shiftキーを押しながらボールを回転するとスクロールになる
+    - https://github.com/yukihane/drag-scroll[DragScroll (fork)] を利用
+    - Shiftキーを1回押すとスクロールモードに切り替わり、もう1回押すとポインターモードに戻る（トグル動作）
+    - トグル動作は独自の改造。有効化: `defaults write com.emreyolcu.DragScroll key_toggle -int 1`
     - Karabiner-ElementsのmouseMotionToScrollはHUGE PLUSのモーションイベントを捕捉できないため使用不可
+    - HUGE PLUSのボタン（ホイールクリック、戻る、fn1/fn2）はCGEventレベルで認識されないため、DragScrollのボタントグル機能も使用不可
     - `open` コマンドでは起動できないため、launchdで自動起動を設定（`~/Library/LaunchAgents/com.emreyolcu.DragScroll.plist`）
+    - ビルド: `cc -O2 -framework ApplicationServices DragScroll/main.c -o DragScroll`
