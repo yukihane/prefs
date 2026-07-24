@@ -32,10 +32,6 @@ alias pbcopy='clip.exe'
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 
-# X の設定
-# https://ja.stackoverflow.com/a/83575/2808
-export DISPLAY=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
-
 # https://youtrack.jetbrains.com/issue/IDEA-276737/Cannot-import-Maven-project-on-WSL-in-202121
 export M2_HOME=/home/yuki/.sdkman/candidates/maven/current
 
