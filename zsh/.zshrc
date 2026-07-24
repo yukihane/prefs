@@ -33,3 +33,9 @@ autoload -Uz compinit && compinit
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
+export PATH=$HOME/.local/bin:$PATH
+
+alias vi=nvim
+alias vim=nvim
+
