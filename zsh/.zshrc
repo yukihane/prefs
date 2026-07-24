@@ -1,3 +1,8 @@
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
 # install prezto
 # https://github.com/sorin-ionescu/prezto
 
@@ -10,10 +15,21 @@
 export VISUAL=/usr/bin/nvim
 export EDITOR=/usr/bin/nvim
 # デフォルトで rm -i になっている
-unalias rm
+(( ${+aliases[rm]} )) && unalias rm
 # git で ^ が使えない対策
 unsetopt extended_glob
 # *(wildcard)でドットファイルも対象にする
 setopt GLOB_DOTS
 # linux で mac の pbcopy みたいなものを実現
-alias pbcopy='xsel --clipboard --input'
+if [[ "$OSTYPE" == linux* ]] && grep -qi microsoft /proc/sys/kernel/osrelease 2>/dev/null; then
+  alias pbcopy='clip.exe'
+elif [[ "$OSTYPE" == linux* ]]; then
+  alias pbcopy='xsel --clipboard --input'
+fi
+
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
+
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
