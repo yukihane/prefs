@@ -29,6 +29,7 @@ Claude Code (v2.1.0以降) は statusline コマンド呼び出し時、stdin経
 | `weekly-sonnet-usage` | 週次のSonnetモデル使用率 |
 | `weekly-opus-usage` | 週次のOpusモデル使用率 |
 | `reset-timer` | 5時間ウィンドウのリセットまでの残り時間 |
+| `weekly-reset-timer` | 週次ウィンドウのリセットまでの残り時間 |
 
 3行目にはおまけでキャッシュ・セッション情報を追加:
 

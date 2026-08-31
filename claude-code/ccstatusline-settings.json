@@ -76,6 +76,15 @@
         "id": "16",
         "type": "reset-timer",
         "color": "brightBlack"
+      },
+      {
+        "id": "22",
+        "type": "separator"
+      },
+      {
+        "id": "23",
+        "type": "weekly-reset-timer",
+        "color": "brightBlack"
       }
     ],
     [
