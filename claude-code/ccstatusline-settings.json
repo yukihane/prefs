@@ -41,7 +41,8 @@
       {
         "id": "8",
         "type": "session-usage",
-        "color": "green"
+        "color": "green",
+        "rawValue": true
       },
       {
         "id": "9",
@@ -50,7 +51,8 @@
       {
         "id": "16",
         "type": "reset-timer",
-        "color": "brightBlack"
+        "color": "green",
+        "rawValue": true
       },
       {
         "id": "11",
@@ -59,7 +61,8 @@
       {
         "id": "10",
         "type": "weekly-usage",
-        "color": "yellow"
+        "color": "yellow",
+        "rawValue": true
       },
       {
         "id": "15",
@@ -68,7 +71,8 @@
       {
         "id": "14",
         "type": "weekly-opus-usage",
-        "color": "brightMagenta"
+        "color": "yellow",
+        "rawValue": true
       },
       {
         "id": "22",
@@ -77,7 +81,8 @@
       {
         "id": "23",
         "type": "weekly-reset-timer",
-        "color": "brightBlack"
+        "color": "yellow",
+        "rawValue": true
       }
     ]
   ],
