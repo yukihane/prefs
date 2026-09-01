@@ -48,27 +48,27 @@
         "type": "separator"
       },
       {
-        "id": "10",
-        "type": "weekly-usage",
-        "color": "yellow"
+        "id": "16",
+        "type": "reset-timer",
+        "color": "brightBlack"
       },
       {
         "id": "11",
         "type": "separator"
       },
       {
-        "id": "14",
-        "type": "weekly-opus-usage",
-        "color": "brightMagenta"
+        "id": "10",
+        "type": "weekly-usage",
+        "color": "yellow"
       },
       {
         "id": "15",
         "type": "separator"
       },
       {
-        "id": "16",
-        "type": "reset-timer",
-        "color": "brightBlack"
+        "id": "14",
+        "type": "weekly-opus-usage",
+        "color": "brightMagenta"
       },
       {
         "id": "22",
