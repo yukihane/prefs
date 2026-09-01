@@ -5,7 +5,8 @@
       {
         "id": "1",
         "type": "model",
-        "color": "cyan"
+        "color": "cyan",
+        "rawValue": true
       },
       {
         "id": "2",
@@ -14,7 +15,8 @@
       {
         "id": "3",
         "type": "context-length",
-        "color": "brightBlack"
+        "color": "brightBlack",
+        "rawValue": true
       },
       {
         "id": "4",
@@ -55,15 +57,6 @@
         "type": "separator"
       },
       {
-        "id": "12",
-        "type": "weekly-sonnet-usage",
-        "color": "blue"
-      },
-      {
-        "id": "13",
-        "type": "separator"
-      },
-      {
         "id": "14",
         "type": "weekly-opus-usage",
         "color": "brightMagenta"
@@ -85,31 +78,6 @@
         "id": "23",
         "type": "weekly-reset-timer",
         "color": "brightBlack"
-      }
-    ],
-    [
-      {
-        "id": "17",
-        "type": "cache-hit-rate",
-        "color": "brightCyan"
-      },
-      {
-        "id": "18",
-        "type": "separator"
-      },
-      {
-        "id": "19",
-        "type": "session-clock",
-        "color": "brightBlack"
-      },
-      {
-        "id": "20",
-        "type": "separator"
-      },
-      {
-        "id": "21",
-        "type": "session-cost",
-        "color": "green"
       }
     ]
   ],

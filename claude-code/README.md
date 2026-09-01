@@ -26,18 +26,11 @@ Claude Code (v2.1.0以降) は statusline コマンド呼び出し時、stdin経
 |---|---|
 | `session-usage` | 5時間ウィンドウの使用率 |
 | `weekly-usage` | 週次(1w)の使用率 |
-| `weekly-sonnet-usage` | 週次のSonnetモデル使用率 |
 | `weekly-opus-usage` | 週次のOpusモデル使用率 |
 | `reset-timer` | 5時間ウィンドウのリセットまでの残り時間 |
 | `weekly-reset-timer` | 週次ウィンドウのリセットまでの残り時間 |
 
-3行目にはおまけでキャッシュ・セッション情報を追加:
-
-| ウィジェット (`type`) | 内容 |
-|---|---|
-| `cache-hit-rate` | プロンプトキャッシュのヒット率 |
-| `session-clock` | セッション経過時間 |
-| `session-cost` | セッションの推定コスト |
+`weekly-sonnet-usage` はこの環境では常に0.0表示となり意味をなさなかったため削除した。原因未特定（他アカウントの実例では逆に`seven_day_opus`がnullで`seven_day_sonnet`に実データが入るケースも確認しており、アカウント/プラン依存の可能性がある。実際のAPIレスポンスは未検証）。
 
 ウィジェットの正確な `type` 文字列は、READMEの記載だけでなく実装（[widget-manifest.ts](https://github.com/sirmalloc/ccstatusline/blob/main/src/utils/widget-manifest.ts)）で確認するのが確実。
 
